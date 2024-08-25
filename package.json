@@ -1,0 +1,29 @@
+{
+  "name": "strapi-nextjs15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && npm run install:client && npm run install:server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "dev:server": "cd server && npm run develop",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "clean:client": "rimraf client/.next client/out",
+    "clean:server-public": "node scripts/clean.js",
+    "clean": "npm run clean:client && npm run clean:server-public",
+    "build:client": "cd client && npm run build",
+    "move:client": "mv client/out/* server/public/",
+    "build:server": "cd server && npm run build",
+    "build": "npm run clean && npm run build:client && npm run move:client && npm run build:server",
+    "start": "cd server && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.0"
+  }
+}

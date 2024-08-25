@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkserver=self.webpackChunkserver||[]).push([[7447],{7447:(l,s,n)=>{n.r(s),n.d(s,{AUTH_ROUTES_EE:()=>h});var t=n(96540);const h=[{component:t.lazy(()=>n.e(2614).then(n.bind(n,32614)).then(E=>({default:E.AuthResponse}))),path:"/auth/login/:authResponse"}]}}]);
