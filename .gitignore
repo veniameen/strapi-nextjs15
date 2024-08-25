@@ -14,6 +14,7 @@ node_modules
 /server/.cache
 /server/.tmp
 /server/build
+/server/dist
 .strapi-updater.json
 exports
 
