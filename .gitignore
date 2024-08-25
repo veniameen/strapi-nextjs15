@@ -14,10 +14,13 @@ node_modules
 /server/.cache
 /server/.tmp
 /server/build
-/server/public/uploads/*
-!/server/public/uploads/.gitkeep
 .strapi-updater.json
 exports
+
+/server/public/*
+!/server/public/uploads
+/server/public/uploads/*
+!/server/public/uploads/.gitkeep
 
 # Production
 /build
